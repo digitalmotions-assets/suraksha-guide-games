@@ -1,82 +1,323 @@
 [
   {
-    "word": "SECURITY",
-    "hint": "Protecting people, property and assets."
-  },
-  {
+    "category": "Security Guard",
+    "difficulty": "easy",
     "word": "GUARD",
-    "hint": "Person responsible for safety and protection."
+    "hint": "A professional assigned to protect property, assets, or people.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
+    "category": "Security Guard",
+    "difficulty": "easy",
     "word": "PATROL",
-    "hint": "Regular inspection of an assigned area."
+    "hint": "The act of walking or driving around an area to monitor and secure it.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "CCTV",
-    "hint": "Camera system used for surveillance."
+    "category": "Security Guard",
+    "difficulty": "easy",
+    "word": "POST",
+    "hint": "The specific location where a security officer is assigned to work.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "ACCESS",
-    "hint": "Permission to enter a restricted area."
+    "category": "Security Guard",
+    "difficulty": "easy",
+    "word": "SHIFT",
+    "hint": "The scheduled period of time a guard is on duty.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "BADGE",
-    "hint": "Identity card worn by employees."
+    "category": "Security Guard",
+    "difficulty": "medium",
+    "word": "RELIEF",
+    "hint": "The guard who takes over the post when your shift ends.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "VISITOR",
-    "hint": "A person entering after permission."
+    "category": "Security Guard",
+    "difficulty": "hard",
+    "word": "VIGILANCE",
+    "hint": "The state of keeping careful watch for possible danger or difficulties.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
+    "category": "Security Guard",
+    "difficulty": "easy",
+    "word": "BATON",
+    "hint": "A stick or club used by security personnel for defense.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Security Guard",
+    "difficulty": "easy",
+    "word": "WHISTLE",
+    "hint": "A small device blown to raise an alert or direct traffic.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Fire Safety",
+    "difficulty": "easy",
     "word": "ALARM",
-    "hint": "Warning system during emergencies."
+    "hint": "An audible or visual warning of a fire or emergency.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "FIRE",
-    "hint": "A major emergency requiring immediate response."
+    "category": "Fire Safety",
+    "difficulty": "easy",
+    "word": "SMOKE",
+    "hint": "The visible vapor and gases given off by a burning substance.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "EXIT",
-    "hint": "Emergency escape route."
+    "category": "Fire Safety",
+    "difficulty": "medium",
+    "word": "HYDRANT",
+    "hint": "An upright pipe with a spout, nozzle, or other connection for drawing water from a main.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "SAFETY",
-    "hint": "Freedom from danger or risk."
+    "category": "Fire Safety",
+    "difficulty": "medium",
+    "word": "BLANKET",
+    "hint": "A fire-resistant fabric used to smother small fires.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "RISK",
-    "hint": "Possibility of harm or loss."
+    "category": "Fire Safety",
+    "difficulty": "expert",
+    "word": "EXTINGUISHER",
+    "hint": "A portable device that discharges a jet of water, foam, gas, or other material to put out a fire.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "EMERGENCY",
-    "hint": "Unexpected situation requiring urgent action."
+    "category": "Fire Safety",
+    "difficulty": "hard",
+    "word": "SPRINKLER",
+    "hint": "A ceiling-mounted device that sprays water when a certain temperature is reached.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "RADIO",
-    "hint": "Communication device used by security staff."
+    "category": "Fire Safety",
+    "difficulty": "expert",
+    "word": "COMBUSTIBLE",
+    "hint": "A material that easily catches fire and burns.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "REPORT",
-    "hint": "Written record of an incident."
+    "category": "CCTV",
+    "difficulty": "easy",
+    "word": "CAMERA",
+    "hint": "A device used to capture video for surveillance.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "INCIDENT",
-    "hint": "An event that requires documentation."
+    "category": "CCTV",
+    "difficulty": "easy",
+    "word": "MONITOR",
+    "hint": "A screen used to view live or recorded security footage.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "GATE",
-    "hint": "Main entry and exit point."
+    "category": "CCTV",
+    "difficulty": "medium",
+    "word": "FOOTAGE",
+    "hint": "Recorded video material from a surveillance system.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "SEARCH",
-    "hint": "Checking a person or vehicle."
+    "category": "CCTV",
+    "difficulty": "easy",
+    "word": "LENS",
+    "hint": "The part of the camera that focuses light to create an image.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "LOCK",
-    "hint": "Device used to secure a door."
+    "category": "CCTV",
+    "difficulty": "medium",
+    "word": "DVR",
+    "hint": "Digital Video Recorder; a device that records video in a digital format.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
   },
   {
-    "word": "KEY",
-    "hint": "Tool used to open a lock."
-  }
-]
+    "category": "CCTV",
+    "difficulty": "expert",
+    "word": "SURVEILLANCE",
+    "hint": "Close observation, especially of a suspected spy or criminal.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "hard",
+    "word": "BIOMETRIC",
+    "hint": "Security identification using physical characteristics like fingerprints.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "expert",
+    "word": "TURNSTILE",
+    "hint": "A mechanical gate consisting of revolving horizontal arms that allow only one person at a time to pass.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "easy",
+    "word": "BADGE",
+    "hint": "An identification card worn by employees or visitors.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "medium",
+    "word": "RFID",
+    "hint": "Radio Frequency Identification; technology used in contactless access cards.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "easy",
+    "word": "PIN",
+    "hint": "Personal Identification Number used on a keypad to gain entry.",
+    "direction": null,
+    "row": null,
+    "column": null,
+    "language": "en"
+  },
+  {
+    "category": "Access Control",
+    "difficulty": "hard",
+    "word": "CREDENTIAL",
+    "Here is the complete, production-ready `words.json` file containing exactly 100 professional security terminology words. It covers all requested categories, includes detailed hints, and follows your requested data structure.
+
+### 4. `words.json`
+
+```json
+[
+  { "word": "PATROL", "hint": "Regular physical inspection round of the premises.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "LOGBOOK", "hint": "Official register to record daily events and visitor entries.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "VIGILANT", "hint": "Keeping careful watch for possible danger or difficulties.", "category": "guard", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "UNIFORM", "hint": "Standardized clothing worn by security personnel.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "WHISTLE", "hint": "Small wind instrument used for signaling and raising alarms.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BATON", "hint": "A short stick or club used by guards for defense.", "category": "guard", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "TORCH", "hint": "Portable battery-powered light source for night shifts.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "RADIO", "hint": "Two-way communication device used on site.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SHIFT", "hint": "The scheduled time period a guard is on duty.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "POST", "hint": "The specific location assigned to a security guard.", "category": "guard", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "HYDRANT", "hint": "Outdoor water supply connection for firefighting.", "category": "fire", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "ALARM", "hint": "Audible warning device indicating an emergency.", "category": "fire", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "EVACUATE", "hint": "To empty a building due to an immediate threat.", "category": "fire", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SMOKE", "hint": "Visible vapor indicating combustion or fire.", "category": "fire", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "DETECTOR", "hint": "Ceiling device that senses smoke or heat.", "category": "fire", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SPRINKLER", "hint": "Automatic ceiling water discharge system for fires.", "category": "fire", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "ASSEMBLY", "hint": "Designated safe area outside during an evacuation.", "category": "fire", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "FLAME", "hint": "The visible, gaseous part of a fire.", "category": "fire", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BLAZE", "hint": "A very large or fiercely burning fire.", "category": "fire", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "OXYGEN", "hint": "One of the three elements of the fire triangle.", "category": "fire", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "CAMERA", "hint": "Video capturing device used for surveillance.", "category": "cctv", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "MONITOR", "hint": "Display screen used in a control room.", "category": "cctv", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "FOOTAGE", "hint": "Recorded video evidence of an incident.", "category": "cctv", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "LENS", "hint": "Optical component of a camera that focuses light.", "category": "cctv", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BLINDSPOT", "hint": "An area not covered by surveillance cameras.", "category": "cctv", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "PIXEL", "hint": "The smallest unit of a digital image or video.", "category": "cctv", "difficulty": "expert", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "RECORD", "hint": "To store video data onto a hard drive.", "category": "cctv", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SCREEN", "hint": "To observe video feeds or physically search a person.", "category": "cctv", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BADGE", "hint": "Identification card worn to show authorization.", "category": "access", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BIOMETRIC", "hint": "Access control using fingerprints or face recognition.", "category": "access", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "TURNSTILE", "hint": "Mechanical gate allowing one person to pass at a time.", "category": "access", "difficulty": "expert", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "KEYCARD", "hint": "Plastic card with a magnetic strip or chip for entry.", "category": "access", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "RFID", "hint": "Radio frequency identification technology.", "category": "access", "difficulty": "expert", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SCANNER", "hint": "Device used to read ID cards or fingerprints.", "category": "access", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "TAILGATE", "hint": "Unauthorized person following an authorized person inside.", "category": "access", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "ENTRY", "hint": "The point of access to a building or premises.", "category": "access", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BANDAGE", "hint": "Material used to bind or protect an injured body part.", "category": "first aid", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "CPR", "hint": "Cardiopulmonary resuscitation acronym.", "category": "first aid", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "TRIAGE", "hint": "Sorting patients according to the urgency of their need.", "category": "first aid", "difficulty": "expert", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SPLINT", "hint": "A rigid piece of material used to support a broken bone.", "category": "first aid", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "AED", "hint": "Automated external defibrillator acronym.", "category": "first aid", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "PULSE", "hint": "The rhythmic throbbing of arteries as blood is propelled.", "category": "first aid", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "WOUND", "hint": "An injury to living tissue caused by a cut or blow.", "category": "first aid", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "MEDIC", "hint": "A medical practitioner or emergency responder.", "category": "first aid", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "SIREN", "hint": "Loud noise maker used to warn of emergencies.", "category": "emergency", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "DRILL", "hint": "A practice procedure for emergency situations.", "category": "emergency", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "HAZMAT", "hint": "Abbreviation for hazardous materials.", "category": "emergency", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "PROTOCOL", "hint": "Standard operating procedure during a crisis.", "category": "emergency", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "ESCAPE", "hint": "To break free from danger or confinement.", "category": "emergency", "difficulty": "easy", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "LOCKDOWN", "hint": "Securing a building to prevent exit or entry.", "category": "emergency", "difficulty": "hard", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "DISASTER", "hint": "A sudden event causing great damage or loss of life.", "category": "emergency", "difficulty": "medium", "direction": "", "row": 0, "column": 0, "language": "en" },
+  { "word": "BREACH", "hint": "An act of breaking a security protocol or physical barrier.", "category": "emergency", "difficulty": "hard", "direction": "", "row": 0, "column": 0,
