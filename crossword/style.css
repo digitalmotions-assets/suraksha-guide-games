@@ -1,0 +1,238 @@
+/* ==========================================
+   Suraksha Guide - Security Crossword
+   style.css
+   ========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.5;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:2rem;
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#555;
+}
+
+/* Score + Timer */
+
+.top-bar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.score-box,
+.timer-box{
+    background:#fff;
+    border-radius:10px;
+    padding:15px 25px;
+    min-width:150px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+
+.score-box span,
+.timer-box span{
+    display:block;
+    color:#777;
+    font-size:.9rem;
+}
+
+.score-box strong,
+.timer-box strong{
+    display:block;
+    margin-top:8px;
+    font-size:1.5rem;
+    color:#1565c0;
+}
+
+/* Game */
+
+.game-area{
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+#crossword-grid{
+    display:grid;
+    grid-template-columns:repeat(15,45px);
+    gap:3px;
+}
+
+/* Cell */
+
+.cell{
+    width:45px;
+    height:45px;
+    border:1px solid #cfd8dc;
+    background:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:22px;
+    font-weight:bold;
+    outline:none;
+}
+
+.cell:focus{
+    border:2px solid #1976d2;
+    background:#e3f2fd;
+}
+
+/* Black Cell */
+
+.block{
+    background:#263238;
+}
+
+/* Correct */
+
+.correct{
+    background:#4caf50;
+    color:#fff;
+}
+
+/* Wrong */
+
+.wrong{
+    background:#f44336;
+    color:#fff;
+}
+
+/* Hint */
+
+.hints{
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    margin-top:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+
+.hints h2{
+    margin-bottom:15px;
+    color:#1565c0;
+}
+
+.hints ol{
+    padding-left:20px;
+}
+
+.hints li{
+    margin-bottom:10px;
+}
+
+/* Buttons */
+
+.buttons{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.buttons button{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#1565c0;
+    color:#fff;
+    font-size:15px;
+    transition:.25s;
+}
+
+.buttons button:hover{
+    background:#0d47a1;
+    transform:translateY(-2px);
+}
+
+/* Result */
+
+.result{
+    text-align:center;
+    margin-top:25px;
+}
+
+.result h2{
+    color:#2e7d32;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+#crossword-grid{
+
+grid-template-columns:repeat(15,28px);
+
+}
+
+.cell{
+
+width:28px;
+
+height:28px;
+
+font-size:16px;
+
+}
+
+header h1{
+
+font-size:1.6rem;
+
+}
+
+.score-box,
+
+.timer-box{
+
+min-width:120px;
+
+padding:12px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.buttons button{
+
+width:100%;
+
+}
+
+}
