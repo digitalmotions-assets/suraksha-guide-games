@@ -1,0 +1,82 @@
+[
+  {
+    "word": "SECURITY",
+    "hint": "Protecting people, property and assets."
+  },
+  {
+    "word": "GUARD",
+    "hint": "Person responsible for safety and protection."
+  },
+  {
+    "word": "PATROL",
+    "hint": "Regular inspection of an assigned area."
+  },
+  {
+    "word": "CCTV",
+    "hint": "Camera system used for surveillance."
+  },
+  {
+    "word": "ACCESS",
+    "hint": "Permission to enter a restricted area."
+  },
+  {
+    "word": "BADGE",
+    "hint": "Identity card worn by employees."
+  },
+  {
+    "word": "VISITOR",
+    "hint": "A person entering after permission."
+  },
+  {
+    "word": "ALARM",
+    "hint": "Warning system during emergencies."
+  },
+  {
+    "word": "FIRE",
+    "hint": "A major emergency requiring immediate response."
+  },
+  {
+    "word": "EXIT",
+    "hint": "Emergency escape route."
+  },
+  {
+    "word": "SAFETY",
+    "hint": "Freedom from danger or risk."
+  },
+  {
+    "word": "RISK",
+    "hint": "Possibility of harm or loss."
+  },
+  {
+    "word": "EMERGENCY",
+    "hint": "Unexpected situation requiring urgent action."
+  },
+  {
+    "word": "RADIO",
+    "hint": "Communication device used by security staff."
+  },
+  {
+    "word": "REPORT",
+    "hint": "Written record of an incident."
+  },
+  {
+    "word": "INCIDENT",
+    "hint": "An event that requires documentation."
+  },
+  {
+    "word": "GATE",
+    "hint": "Main entry and exit point."
+  },
+  {
+    "word": "SEARCH",
+    "hint": "Checking a person or vehicle."
+  },
+  {
+    "word": "LOCK",
+    "hint": "Device used to secure a door."
+  },
+  {
+    "word": "KEY",
+    "hint": "Tool used to open a lock."
+  }
+]
