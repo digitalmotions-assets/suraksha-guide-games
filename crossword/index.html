@@ -1,132 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Security Crossword Challenge | Suraksha Guide</title>
-    <meta name="description" content="Play the Security Crossword Challenge and improve your knowledge of security, safety, fire protection, CCTV, access control and emergency response.">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Suraksha Guide Crossword Puzzle - A professional security training game featuring customizable difficulty, dynamic grid generation, and comprehensive score tracking.">
+    <meta name="keywords" content="Security, Training, Crossword, Puzzle, Suraksha Guide, HTML5 Game, Vanilla JS">
+    <meta name="author" content="Suraksha Guide">
+    
+    <title>Suraksha Guide | Security Training Crossword</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Canvas for Confetti Animation -->
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
 
-<div class="container">
+    <div class="app-container">
+        <!-- Header & Top Navigation -->
+        <header class="glass-panel">
+            <div class="header-left">
+                <h1>🛡️ Suraksha Guide</h1>
+                <span class="subtitle">Security Training Puzzle</span>
+            </div>
+            
+            <div class="header-right">
+                <div class="user-stats" aria-label="User Statistics">
+                    <div class="stat-badge" title="Experience Points">
+                        <span class="icon">⭐</span> <span id="xp-display">0</span> XP
+                    </div>
+                    <div class="stat-badge" title="Coins">
+                        <span class="icon">🪙</span> <span id="coin-display">0</span>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+                    🌙
+                </button>
+                <button id="btn-leaderboard" class="icon-btn" aria-label="Open Leaderboard" title="Leaderboard">
+                    🏆
+                </button>
+                <button id="btn-achievements" class="icon-btn" aria-label="Open Achievements" title="Achievements">
+                    🎖️
+                </button>
+            </div>
+        </header>
 
-    <!-- Header -->
-    <header>
+        <!-- Game Info Bar -->
+        <section class="game-info-bar glass-panel" aria-label="Game Status">
+            <div class="game-settings">
+                <select id="difficulty-selector" aria-label="Select Difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <select id="category-selector" aria-label="Select Category">
+                    <option value="all">All Security Topics</option>
+                    <option value="guard">Security Guard</option>
+                    <option value="fire">Fire Safety</option>
+                    <option value="access">Access Control</option>
+                    <option value="emergency">Emergency Response</option>
+                </select>
+            </div>
 
-        <h1>🛡 Security Crossword Challenge</h1>
+            <div class="live-stats">
+                <div class="stat-item">
+                    <span class="label">Time:</span>
+                    <span id="timer-display" class="value font-mono">00:00</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Moves:</span>
+                    <span id="move-counter" class="value font-mono">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Accuracy:</span>
+                    <span id="accuracy-display" class="value font-mono">100%</span>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Test your Security Knowledge by solving the crossword puzzle.
-        </p>
-
-    </header>
-
-
-    <!-- Top Info -->
-
-    <section class="top-bar">
-
-        <div class="score-box">
-
-            <span>Score</span>
-
-            <strong id="score">0</strong>
-
+        <!-- Progress Bar -->
+        <div class="progress-container" aria-label="Puzzle Progress">
+            <div id="puzzle-progress-bar" class="progress-bar"></div>
         </div>
 
-        <div class="timer-box">
+        <!-- Main Game Layout -->
+        <main class="game-layout">
+            
+            <!-- Left Column: Crossword Grid -->
+            <section class="grid-section glass-panel">
+                <div id="loading-spinner" class="loading-overlay">
+                    <div class="spinner"></div>
+                    <p>Generating Puzzle...</p>
+                </div>
+                
+                <div class="grid-wrapper">
+                    <!-- Dynamic Grid will be injected here -->
+                    <div id="crossword-grid" role="grid" aria-label="Crossword Puzzle Grid"></div>
+                </div>
+                
+                <!-- Action Controls -->
+                <div class="game-controls">
+                    <button id="btn-check" class="btn btn-primary" aria-label="Check Answers">✔️ Check Answers</button>
+                    <button id="btn-reveal-letter" class="btn btn-secondary" aria-label="Reveal One Letter" title="Costs 10 Coins">🔍 Reveal Letter</button>
+                    <button id="btn-reveal-word" class="btn btn-secondary" aria-label="Reveal Complete Word" title="Costs 25 Coins">👁️ Reveal Word</button>
+                    <button id="btn-reveal-puzzle" class="btn btn-danger" aria-label="Reveal Entire Puzzle">🚨 Reveal Puzzle</button>
+                </div>
+            </section>
 
-            <span>Time</span>
+            <!-- Right Column: Hints -->
+            <aside class="hints-section glass-panel">
+                <div class="hints-header">
+                    <h2>Clues</h2>
+                    <div class="hints-actions">
+                        <button id="btn-reset" class="btn btn-outline btn-sm" aria-label="Reset Puzzle">🔄 Reset</button>
+                        <button id="btn-new" class="btn btn-primary btn-sm" aria-label="Generate New Puzzle">➕ New Puzzle</button>
+                    </div>
+                </div>
+                
+                <div class="hints-scroll-area">
+                    <div class="hints-column">
+                        <h3>Across ➡️</h3>
+                        <ul id="hints-across" class="hints-list" role="list" aria-label="Across Hints">
+                            <!-- Across hints dynamically injected here -->
+                        </ul>
+                    </div>
+                    
+                    <div class="hints-column">
+                        <h3>Down ⬇️</h3>
+                        <ul id="hints-down" class="hints-list" role="list" aria-label="Down Hints">
+                            <!-- Down hints dynamically injected here -->
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
 
-            <strong id="timer">00:00</strong>
+    <!-- Modals -->
 
+    <!-- Win Modal -->
+    <div id="win-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog" aria-labelledby="win-title">
+        <div class="modal-content glass-panel">
+            <h2 id="win-title">🎉 Puzzle Completed!</h2>
+            <div class="stars-display" id="win-stars">
+                <!-- Stars injected here -->
+            </div>
+            
+            <div class="win-stats-grid">
+                <div class="win-stat">
+                    <span>Time</span>
+                    <strong id="win-time">00:00</strong>
+                </div>
+                <div class="win-stat">
+                    <span>Accuracy</span>
+                    <strong id="win-accuracy">100%</strong>
+                </div>
+                <div class="win-stat">
+                    <span>Score</span>
+                    <strong id="win-score">0</strong>
+                </div>
+                <div class="win-stat">
+                    <span>XP Earned</span>
+                    <strong id="win-xp" class="text-success">+0</strong>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <button id="btn-next-puzzle" class="btn btn-primary btn-lg">Next Puzzle ➡️</button>
+                <button id="btn-close-win" class="btn btn-outline">Close</button>
+            </div>
         </div>
+    </div>
 
-    </section>
-
-
-
-    <!-- Crossword Area -->
-
-    <section class="game-area">
-
-        <div id="crossword-grid">
-
-            <!-- JavaScript Creates Grid -->
-
+    <!-- Leaderboard Modal -->
+    <div id="leaderboard-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog" aria-labelledby="leaderboard-title">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h2 id="leaderboard-title">🏆 Leaderboard</h2>
+                <button class="close-modal icon-btn" aria-label="Close Modal">❌</button>
+            </div>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="high-scores">High Scores</button>
+                <button class="tab-btn" data-tab="best-times">Best Times</button>
+            </div>
+            <div class="tab-content" id="leaderboard-content">
+                <!-- Leaderboard data injected here -->
+            </div>
         </div>
+    </div>
 
-    </section>
+    <!-- Achievements Modal -->
+    <div id="achievements-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog" aria-labelledby="achievements-title">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h2 id="achievements-title">🎖️ Achievements</h2>
+                <button class="close-modal icon-btn" aria-label="Close Modal">❌</button>
+            </div>
+            <div class="achievements-grid" id="achievements-content">
+                <!-- Achievements dynamically injected here -->
+            </div>
+        </div>
+    </div>
 
+    <!-- Toast Notifications -->
+    <div id="toast-container" aria-live="polite"></div>
 
-
-    <!-- Hints -->
-
-    <section class="hints">
-
-        <h2>Hints</h2>
-
-        <ol id="hint-list">
-
-        </ol>
-
-    </section>
-
-
-
-    <!-- Buttons -->
-
-    <section class="buttons">
-
-        <button id="checkBtn">
-
-            ✔ Check Answers
-
-        </button>
-
-        <button id="hintBtn">
-
-            💡 Hint
-
-        </button>
-
-        <button id="resetBtn">
-
-            🔄 Reset
-
-        </button>
-
-        <button id="revealBtn">
-
-            👁 Reveal
-
-        </button>
-
-    </section>
-
-
-
-    <!-- Result -->
-
-    <section class="result">
-
-        <h2 id="message">
-
-            Good Luck!
-
-        </h2>
-
-    </section>
-
-
-
-</div>
-
-<script src="script.js"></script>
-
+    <!-- Script Injection -->
+    <script src="script.js"></script>
 </body>
 </html>
